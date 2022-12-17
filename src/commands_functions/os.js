@@ -1,6 +1,4 @@
 import * as os from 'os';
-import { printDirectory } from '../helpers/helpers_export.js';
-
 
 const cpuInfo = async() => {
     let numOfCpus = `Amount of CPUS: ${os.cpus().length};` 
@@ -29,7 +27,7 @@ const customOs = async (param) => {
             console.log(os.arch());
             break;          
         default:
-            console.error('Invalid input')
+            console.error('Invalid input');
             break;
     }
 };

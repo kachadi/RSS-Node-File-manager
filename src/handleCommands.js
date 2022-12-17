@@ -5,11 +5,9 @@ import { parseLine } from './parseLine.js';
 const handleCommands = async (rl, line) => {
 
     await parseLine(rl, line)
-        .catch(() => console.error(ERR_MSG_OPERATION_FAILED));
+        .catch(() => console.error(ERR_MSG_OPERATION_FAILED))
 
-    printDirectory();
+    await printDirectory();
 }
 
 export { handleCommands };
-
-
