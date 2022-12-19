@@ -5,7 +5,7 @@ import { resolvePath } from '../helpers/resolvePath.js';
 const customHash = async ([...pathToFile]) => {
 
     await fs.promises.readFile(resolvePath(pathToFile), null , { flag: 'wx+'})
-        .then(data => console.log(crypto.createHash('sha256').update(data).digest('hex')))
+        .then(data => console.log(crypto.createHash('sha256').update(data).digest('hex')));
     
 }
 

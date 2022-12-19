@@ -7,7 +7,7 @@ const resolvePath = (pathToFile) => {
         .map(i => i.replace(`"`, ''))
         .join('')
 
-    return path.resolve(removeQuotesPath)
+    return path.resolve(removeQuotesPath);
 };
 
 export { resolvePath };

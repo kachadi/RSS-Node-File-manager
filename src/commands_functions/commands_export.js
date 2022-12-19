@@ -5,3 +5,6 @@ export { customCat } from '../commands_functions/cat.js';
 export { customAdd } from '../commands_functions/add.js';
 export { customRm } from '../commands_functions/rm.js';
 export { customHash } from '../commands_functions/hash.js';
+export { customCp } from '../commands_functions/cp.js';
+export { customRn } from '../commands_functions/rn.js';
+export { customMv } from '../commands_functions/mv.js';
