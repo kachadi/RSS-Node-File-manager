@@ -12,7 +12,7 @@ const parseLine = async (rl, line) => {
             rl.close();
             break;
         case 'up':
-            await customCd('..');
+            process.chdir('..');
             break;
         case 'cd':
             await customCd(args);
