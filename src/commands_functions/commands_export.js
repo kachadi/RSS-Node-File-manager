@@ -8,3 +8,5 @@ export { customHash } from '../commands_functions/hash.js';
 export { customCp } from '../commands_functions/cp.js';
 export { customRn } from '../commands_functions/rn.js';
 export { customMv } from '../commands_functions/mv.js';
+export { customCompress } from '../commands_functions/compress.js';
+export { customDecompress } from '../commands_functions/decompress.js';

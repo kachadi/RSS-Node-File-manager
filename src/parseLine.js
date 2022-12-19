@@ -1,6 +1,7 @@
 import { ERR_MSG_INVALID_INPUT } from './constants.js';
-import { customOs, customCd, customLs, customCat, customAdd,
-     customRm, customHash, customCp, customRn, customMv } from './commands_functions/commands_export.js';
+import { customOs, customCd, customLs, customCat, 
+    customAdd, customRm, customHash, customCp, customRn,
+    customMv, customCompress, customDecompress } from './commands_functions/commands_export.js';
 
 const parseLine = async (rl, line) => {
     
@@ -44,10 +45,10 @@ const parseLine = async (rl, line) => {
             await customHash(args);
             break;
         case 'compress':
-            
+            await customCompress(args)
             break;
         case 'decompress':
-            
+            await customDecompress(args)
             break;                                                                                                                                             
         default:
             console.error(ERR_MSG_INVALID_INPUT);
